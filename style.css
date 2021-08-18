@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;*/
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+    background-color: var(--violet);
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    height: 100vh;
+}
+
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 96vh;
+    width: 95%;
+    max-width: 1400px;
+}
+
+    header {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .area--info {
+        display: flex;
+    }
+
+        .area--image {
+            width: 50%;
+        }
+
+            .area--image img {
+                width: 95%;
+                height: auto;
+            }
+
+        .area--copy {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            padding-left: 20px;
+        }
+
+            .area--copy h1 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
+
+            .area--copy p {
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+
+            .area--copy button {
+                width: 200px;
+                height: 60px;
+                background-color: #FFF;
+                border: none;
+                color: var(--violet);
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400 ;
+                font-size: 18px;
+                border-radius: 30px;
+                box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+                cursor: pointer;
+            }
+
+                .area--copy button:hover {
+                    background-color: var(--soft-magenta);
+                    color: #FFF;
+                }
+
+        .social--area {
+            text-align: end;
+            margin-top: 50px;
+        }
+
+            .fb, .ig, .tt {
+                display: inline-block;
+                width: 40px; 
+                height: 40px; 
+                border-radius: 20px; 
+                cursor: pointer;}
+
+            .fb {background-image: url(images/facebook-g.png); background-size: cover; background-repeat: no-repeat;}
+            .fb:hover {background-image: url(images/facebook.png);}
+
+            .tt {background-image: url(images/twitter-g.png); background-size: cover; background-repeat: no-repeat; margin: 0px 20px}
+            .tt:hover {background-image: url(images/twitter.png);}
+
+            .ig {background-image: url(images/instagram-g.png); background-size: cover; background-repeat: no-repeat;}
+            .ig:hover {background-image: url(images/instagram.png);}
+
+footer { font-size: 11px; text-align: center; color: #FFF; }
+footer a { color: hsl(228, 45%, 44%); color: var(--soft-magenta); text-decoration: none;}
+
+
+@media screen and (max-width:768px) {
+
+    .main {
+        justify-content: flex-start;
+    }
+
+    header img {
+        width: 150px;
+        height: auto;
+    }
+
+    .area--image {
+        width: 100%;
+    }
+
+    .area--copy {
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+    }
+        
+        .area--copy h1 {
+            font-size: 22px;
+        }
+
+    .area--info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .area--info button {
+        margin: auto;
+    }
+
+    .social--area {
+        text-align: center;
+    }
+}
